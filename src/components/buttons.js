@@ -18,13 +18,13 @@ export default function Buttons() {
         }
     ];
     return (
-        <div>
+        <div className="relative z-1">
             <a href={links[0].url}><button
                   type="button"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                  class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                  style={{"background-color": "#7289da"}}
+                  class="mb-2 mr-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  style={{"background-color": "#7289da", zIndex: 1, position: 'relative'}}
                   href={links[0].url}
                   >
                   <svg
@@ -43,8 +43,8 @@ export default function Buttons() {
                   type="button"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                  class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                  style={{"background-color": "#ea4335"}}
+                  class="mb-2 mr-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  style={{"background-color": "#ea4335", zIndex: 1, position: 'relative'}}
                   href={links[1].url}
                   >
                   <svg
@@ -62,8 +62,8 @@ export default function Buttons() {
                   type="button"
                   data-te-ripple-init
                   data-te-ripple-color="light"
-                  class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-                  style={{"background-color": "#0077b5"}} >
+                  class="mb-2 mr-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  style={{"background-color": "#0077b5",zIndex: 1, position: 'relative'}} >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-4 w-4"
