@@ -1,8 +1,35 @@
-export default function timeline() {
+
+export default function Timeline() {
+    const jobs = [
+        {
+            name: 'Software Lab Instructor',
+            date: 'July 2023-August 2023',
+            description: '',
+            logo: ''
+        }
+    ]
+    
     return (
 
-        <div className="flex items-center justify-center mt-7 ml-20">            
-            <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+        <div className={`flex items-center justify-center mt-7 ml-28`}>            
+            <ol class="relative border-l border-gray-200 dark:border-gray-700"> 
+                <li class="mb-10 ml-6">            
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+                        <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
+                    </svg>
+                    </span>
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-200 dark:text-white">Software Lab Instructor<span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">Latest</span></h3>
+                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Software Engineer | July 2023-August 2023</time>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 w-3/4">
+                        <li class="space-y-1 text-gray-500 list-disc list-inside ">
+                        Worked in Cloud App Development and Maintenance department, with a team working on Human Resource Managment Portal named SYSHCM. 
+                        </li>
+                        <li class="space-y-1 text-gray-500 list-disc list-inside ">
+                        Cleaned data using python, produced SQL scripts to be deployed on live production
+                        </li>
+                    </p>
+                </li>                 
                 <li class="mb-10 ml-6">            
                     <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
@@ -49,7 +76,6 @@ export default function timeline() {
                     <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
                 </li>
             </ol>
-
         </div>
     );
 }
