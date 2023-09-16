@@ -1,41 +1,34 @@
 import React from "react";
 import Card from "./card";
-import { Octokit } from "@octokit/core";
 
 export default function Projects() {
     
-    const octokit = new Octokit({
-        auth: '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'
-      })
-      async function getReponse(){
-          const response = await octokit.request('GET /users/{username}/repos', {
-            username: 'hatifmujahid',
-            
-            headers: {
-              'X-GitHub-Api-Version': '2022-11-28'
-            }
-          })
-          return response.data
-      }
-      console.log(getReponse())
+    
       
       
     return (
-      <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32 z-10 relative" style={{zIndex:1000, position:"relative"}}>
+      <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10" >
         <h1 className="text-center text-5xl font-bold text-white mb-6">Projects</h1>
-        <div class="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3 z-10 relative">
+        <div class="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3 ">
           <div class="grid grid-cols-1 gap-4">
-            <Card />
-            <Card />
+            <Card name="hatifmujahid.com" description="The webiste you're looking at" link="https://github.com/hatifmujahid/portfolio"/>
+            <Card name="Inventory Managment System" description="Inventory Management portal using PERN stack" link="https://github.com/hatifmujahid/Inventory-Management-System-PERN"/>
+            <Card name="Brainy Bananas" description="A website made for client deployed on vercel" link="https://brainybananas.vercel.app"/>
+            
           </div>
           <div class="grid grid-cols-1 gap-4">
-            <Card />
-            <Card />
+            <Card name="Pwned Password" description="Data structures project to search in 20Gb data in 24 seconds" link="https://github.com/hatifmujahid/DS-Project.cpp"/>
+            <Card name="Client Server TCP" description="Client server chat app using computer networks and python" link="https://github.com/hatifmujahid/client_server_tcp"/>
+            <Card name="Testing using CMake" description="Tested a C++ program using CMake" link="https://github.com/hatifmujahid/SE_testing_using_CMAKE"/>
+            
+
+            
           </div> 
           <div class="grid grid-cols-1 gap-4">
-            <Card />
-            <Card />
-          </div> 
+            <Card name="Weather App" description="Weather website made using WeatherAPI and deployd on vercel" link="https://weatherapp-nu-beryl.vercel.app"/>
+            <Card name="Piano Tiles Aim bot" description="Simple bot made using python" link="https://github.com/hatifmujahid/image_recog_bots"/>
+            <Card name="Spam-Mail-Classification" description="📧🚫 Spam Email Classifier using KNN in Python. Identify spam emails with accuracy using KNN algorithm. 🕵️‍♂️🔍✉️" link="https://github.com/hatifmujahid/Spam-Mail-Classification"/>
+          </div>          
         </div>
       </div>
     );

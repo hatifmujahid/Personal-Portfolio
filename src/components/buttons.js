@@ -10,11 +10,11 @@ export default function Buttons() {
         },
         {
             name: "facebook",
-            url: 'https://facebook.com'
+            url: 'https://facebook.com/HMHM08'
         },
         {
             name: "Instagram",
-            url: 'https://instagram.com'
+            url: 'https://instagram.com/hatifhasnoidea/'
         },
         {
           name: "Email",
@@ -27,7 +27,7 @@ export default function Buttons() {
         },
         {
             name: "Twitter",
-            url: 'https://twitter.com/'
+            url: 'https://twitter.com/mujahid_hatif'
         },
         
 
