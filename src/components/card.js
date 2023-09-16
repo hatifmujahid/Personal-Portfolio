@@ -17,7 +17,7 @@ export default function Card(props) {
                         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
-                      1.8K
+                      {Math.floor(Math.random() * 10)}
                     </span>
                   </div>
                   <h2 class="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">{props.name}</h2>

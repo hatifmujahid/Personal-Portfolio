@@ -1,13 +1,6 @@
 
 export default function Timeline() {
-    const jobs = [
-        {
-            name: 'Software Lab Instructor',
-            date: 'July 2023-August 2023',
-            description: '',
-            logo: ''
-        }
-    ]
+    
     
     return (
 
