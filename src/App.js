@@ -31,7 +31,7 @@ function App() {
       ) : (
         // Show the main content when isLoading is false
         <div style={{ width: '100%', height: '100%', background: "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)" }}>
-          <Parallax pages={3} ref={parallax} style={{ background: '#000000' }}>
+          <Parallax pages={4} ref={parallax} style={{ background: '#000000' }}>
             <ParallaxLayer offset={0} speed={1} className="parallax-layer" style={{ backgroundColor: '#000000' }}>
               <section class="h-screen w-screen flex items-center justify-center opacity-0 ease-in duration-100 mt-10" id='section'>
                 <div class="py-8 px-4 max-w-screen-xl text-center lg:py-16">
@@ -84,6 +84,10 @@ function App() {
             /> */}
             <ParallaxLayer offset={0.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
               <img alt='' src={url('satellite4')} style={{ width: '15%', marginLeft: '75%' }} />
+            </ParallaxLayer>
+            <ParallaxLayer offset={3} speed={0.8} style={{ opacity: 0.1 }}>
+              <img alt='' src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+              <img alt='' src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
             </ParallaxLayer>
             
             
