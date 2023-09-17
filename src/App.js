@@ -32,7 +32,7 @@ function App() {
         // Show the main content when isLoading is false
         <div style={{ width: '100%', height: '100%', background: "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)" }} className='snap-y'>
           <Parallax pages={4} ref={parallax} style={{ background: '#000000' }}>
-            <ParallaxLayer offset={0} speed={1} className="parallax-layer" style={{ backgroundColor: '#000000' }}>
+            <ParallaxLayer offset={0} speed={0.5} className="parallax-layer" style={{ backgroundColor: '#000000' }}>
               <section class="h-screen w-screen flex flex-col items-center justify-center opacity-0 ease-in duration-100 mt-10" id='section'>
                 <div class="py-8 px-4 max-w-screen-xl text-center lg:py-16 snap-center">
                   <h1 class="pb-4 font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-zinc-200/60 via-zinc-200 to-zinc-200/60">
@@ -43,7 +43,7 @@ function App() {
                   </h1>
                   
                     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=B0B0B0&center=true&width=800&height=100&lines=Welcome+to+my+portfolio!;Open+to+Work;Exploring+AI%2FML;MERN+%7C+Next+JS+%7C+Nest+JS+Developer;Cyber+Security+Enthusiast" alt="Typing SVG" />
-                  <a href='https://drive.google.com/file/d/1eVv3tqRd2OFzfrfcBLTgkzqfkKx_Ue7p/view?usp=sharing'>
+                    <a href='https://drive.google.com/file/d/1eVv3tqRd2OFzfrfcBLTgkzqfkKx_Ue7p/view?usp=sharing'>
                     <button type="button" class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2">
                       <svg class="w-4 h-4 mr-2 -ml-1 text-[#626890]" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path></svg>
                       My resume
@@ -60,7 +60,7 @@ function App() {
             </ParallaxLayer>
 
                 <Buttons />
-            <ParallaxLayer offset={1} speed={0.3} style={{ backgroundColor: '#000000' }}>
+            <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#000000' }}>
               <h1 class="text-center text-5xl font-bold text-white">Timeline</h1>
               <Timeline />
             </ParallaxLayer>
@@ -86,7 +86,7 @@ function App() {
             <ParallaxLayer offset={0.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
               <img alt='' src={url('satellite4')} style={{ width: '15%', marginLeft: '75%' }} />
             </ParallaxLayer>
-            <ParallaxLayer offset={3} speed={0.8}>
+            <ParallaxLayer offset={3} speed={0}>
               <h1 className="text-center text-5xl font-bold text-white">Education</h1>
             <div className=" px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
               <div class="grid grid-cols-1 gap-4 mx-auto  lg:mx-0 md:grid-cols-3 ">
