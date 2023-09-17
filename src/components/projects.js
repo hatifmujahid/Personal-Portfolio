@@ -4,27 +4,9 @@ import './projects.css'
 import { useState, useEffect } from 'react';
 
 export default function Projects() {
-    const [isVisible, setIsVisible] = useState(false);
-
-    const handleScroll = () => {
-        const contactSection = document.querySelector('.contact-section');
-        const rect = contactSection.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-          setIsVisible(true);
-          window.removeEventListener('scroll', handleScroll);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Check on initial load in case the section is already visible
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    
     return (
-      <div className={`contact-section px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10 ${isVisible ? 'slide-in-contact-us' : ''}`}>
-        <h1 className="text-center text-5xl font-bold text-white mb-6">Projects</h1>
+      <div className="contact-section px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
         <div class="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3 ">
           <div class="grid grid-cols-1 gap-4">
             <Card name="hatifmujahid.com" description="The webiste you're looking at" link="https://github.com/hatifmujahid/portfolio"/>

@@ -11,6 +11,7 @@ function App() {
   const parallax = useRef(null)
   const [isLoading, setIsLoading] = useState(true); 
 
+  
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false); 
@@ -21,6 +22,8 @@ function App() {
   }, []);
   const url = (name, wrap = false) =>
     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+  
+  
   return (
     <div>
       {isLoading ? ( // Show loading screen if isLoading is true
@@ -61,7 +64,9 @@ function App() {
               <Timeline />
             </ParallaxLayer>
             
-            <ParallaxLayer offset={2} speed={0.8} classNstyle={{ backgroundColor: '#000000', height:'max'}}>
+            <ParallaxLayer offset={2} speed={0.8} classNstyle={{ backgroundColor: '#000000'}}>
+              <h1 className="text-center text-5xl font-bold text-white">Projects</h1>
+
               <Projects />
               
             </ParallaxLayer>
@@ -81,8 +86,8 @@ function App() {
               <img alt='' src={url('satellite4')} style={{ width: '15%', marginLeft: '75%' }} />
             </ParallaxLayer>
             
+            
           </Parallax>
-          
         </div>
       )}
       
