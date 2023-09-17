@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 export default function Projects() {
     
     return (
-      <div className="contact-section px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
+      <div className=" px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
         <div class="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3 ">
           <div class="grid grid-cols-1 gap-4">
             <Card name="hatifmujahid.com" description="The webiste you're looking at" link="https://github.com/hatifmujahid/portfolio"/>
