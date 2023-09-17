@@ -1,6 +1,6 @@
 export default function Card(props) {
     return (
-        <div class="overflow-hidden relative duration-700 border rounded-xl hover:bg-slate-500 group md:gap-8 hover:border-zinc-400/50 border-zinc-600">
+        <div class="overflow-hidden relative duration-700 border rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] hover:bg-black hover:z-20 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 hover:scale-110">
               <div class="pointer-events-none">
                 <div class="absolute inset-0 z-10  transition duration-1000 [mask-image:linear-gradient(black,transparent)]"></div>
                 <div class="absolute inset-0 z-10  bg-gradient-to-br opacity-100  via-zinc-100/10  transition duration-1000 group-hover:opacity-50 " style={{WebkitMaskImage: 'radial-gradient(240px at 0px 0px, white, transparent)'}}></div>

@@ -33,7 +33,7 @@ function App() {
         <div style={{ width: '100%', height: '100%', background: "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)" }} className='snap-y'>
           <Parallax pages={4} ref={parallax} style={{ background: '#000000' }}>
             <ParallaxLayer offset={0} speed={1} className="parallax-layer" style={{ backgroundColor: '#000000' }}>
-              <section class="h-screen w-screen flex items-center justify-center opacity-0 ease-in duration-100 mt-10" id='section'>
+              <section class="h-screen w-screen flex flex-col items-center justify-center opacity-0 ease-in duration-100 mt-10" id='section'>
                 <div class="py-8 px-4 max-w-screen-xl text-center lg:py-16 snap-center">
                   <h1 class="pb-4 font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-zinc-200/60 via-zinc-200 to-zinc-200/60">
                     <span style={{ display: 'inline-block', 'vertical-align': 'top', 'max-width': '700px' }}>
@@ -58,6 +58,7 @@ function App() {
                 </div>
               </section>
             </ParallaxLayer>
+
                 <Buttons />
             <ParallaxLayer offset={1} speed={0.3} style={{ backgroundColor: '#000000' }}>
               <h1 class="text-center text-5xl font-bold text-white">Timeline</h1>
@@ -90,44 +91,44 @@ function App() {
             <div className=" px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
               <div class="grid grid-cols-1 gap-4 mx-auto  lg:mx-0 md:grid-cols-3 ">
                   <div class="grid grid-cols-1 gap-4">
-                    <div class="bg-gradient-to-r bg-white shadow-lg rounded-lg px-4 py-6 text-center">
+                    <div class="bg-gradient-to-r bg-slate-800 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] rounded-lg px-4 py-6 text-center">
                       <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">Bachelors in Computer Science</h2>
-                        <span class="text-gray-500">2020 - 2024 (Expected)</span>
+                        <h2 class="text-xl font-bold text-gray-200">Bachelors in Computer Science</h2>
+                        <span class="text-gray-300">2020 - 2024 (Expected)</span>
                       </div>
                       <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">National University of Sciences and Technology (FAST-NUCES)</h2>
-                        <span class="text-gray-500">Karachi, Pakistan</span>
+                        <h2 class="text-xl font-bold text-gray-200">National University of Sciences and Technology (FAST-NUCES)</h2>
+                        <span class="text-gray-300">Karachi, Pakistan</span>
                       </div>
                       <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">CGPA: 3.4</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid grid-cols-1 gap-4">
-                    <div class="bg-gradient-to-r bg-white  shadow-lg rounded-lg px-4 py-6 text-center">
-                      <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">A levels</h2>
-                        <span class="text-gray-500">2018 - 2020</span>
-                      </div>
-                      <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">Credo College</h2>
-                        <span class="text-gray-500">Karachi, Pakistan</span>
-                      </div>
-                      <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700"></h2>
+                        <h2 class="text-xl font-bold text-gray-100">CGPA: 3.4</h2>
                       </div>
                     </div>
                   </div>
                   <div class="grid grid-cols-1 gap-4">
-                    <div class="bg-gradient-to-r bg-white shadow-lg rounded-lg px-4 py-6 text-center">
+                    <div class="bg-gradient-to-r shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-slate-800 rounded-lg px-4 py-6 text-center">
                       <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">O levels</h2>
-                        <span class="text-gray-500"></span>
+                        <h2 class="text-xl font-bold text-gray-200">A levels</h2>
+                        <span class="text-gray-300">2018 - 2020</span>
                       </div>
                       <div class="mb-3">
-                        <h2 class="text-xl font-bold text-gray-700">Beaconhouse School System</h2>
-                        <span class="text-gray-500">Karachi, Pakistan</span>
+                        <h2 class="text-xl font-bold text-gray-200">Credo College</h2>
+                        <span class="text-gray-300">Karachi, Pakistan</span>
+                      </div>
+                      <div class="mb-3">
+                        <h2 class="text-xl font-bold text-gray-100"></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 gap-4">
+                    <div class="shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-gradient-to-r bg-slate-800 rounded-lg px-4 py-6 text-center">
+                      <div class="mb-3">
+                        <h2 class="text-xl font-bold text-gray-200">O levels</h2>
+                        <span class="text-gray-300"></span>
+                      </div>
+                      <div class="mb-3">
+                        <h2 class="text-xl font-bold text-gray-200">Beaconhouse School System</h2>
+                        <span class="text-gray-300">Karachi, Pakistan</span>
                       </div>
                       <div class="mb-3">
                         <h2 class="text-xl font-bold text-gray-700"></h2>
