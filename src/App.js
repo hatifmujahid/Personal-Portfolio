@@ -60,7 +60,7 @@ function App() {
             </ParallaxLayer>
 
                 <Buttons />
-            <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#000000' }}>
+            <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#000000' }}>
               <h1 class="text-center text-5xl font-bold text-white">Career Timeline</h1>
               <Timeline />
             </ParallaxLayer>
@@ -71,7 +71,7 @@ function App() {
               <Projects />
               
             </ParallaxLayer>
-            <ParallaxLayer offset={3} speed={0.4}>
+            <ParallaxLayer offset={3} speed={1}>
               <h1 className="text-center text-5xl font-bold text-white">Education</h1>
             <div className=" px-6 mx-auto m-3 space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-10">
               <div class="grid grid-cols-1 gap-4 mx-auto  lg:mx-0 md:grid-cols-3 ">
