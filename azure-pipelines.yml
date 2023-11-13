@@ -3,8 +3,7 @@
 trigger:
 - master  
 
-pool: 
-  portfolio_self_hosted_agent 
+pool: portfolio_self_hosted_agent 
 
 stages:
 - stage: Build
