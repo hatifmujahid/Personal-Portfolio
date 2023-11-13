@@ -4,7 +4,7 @@ trigger:
   - master  
 
 pool: 
-  - portfolio_self_hosted_agent 
+  portfolio_self_hosted_agent 
 
 
 steps:
