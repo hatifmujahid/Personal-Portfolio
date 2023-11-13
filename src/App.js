@@ -107,7 +107,7 @@ function App() {
                     </section>
                     <div className="h-screen w-screen flex flex-col items-center justify-center ease-in duration-100 mb-10">
                         <h1 class="text-center text-5xl font-bold text-white">
-                            Career Timeline
+                            Career Timeline 
                         </h1>
                         <Timeline />
                     </div>
