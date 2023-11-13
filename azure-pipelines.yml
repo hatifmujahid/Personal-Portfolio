@@ -1,23 +1,21 @@
 # azure-pipelines.yml
 
 trigger:
-- master  
+  - master  
 
-pool: portfolio_self_hosted_agent 
+pool: 
+  - portfolio_self_hosted_agent 
 
-stages:
-- stage: Build
-  jobs:
-  - job: BuildJob
-    steps:
-      - task: NodeTool@0
-        inputs:
-          versionSpec: '10.x'
-        displayName: 'Install Node.js'
-      - script: |
-          npm install
-          npm run build
-        displayName: 'npm install and build'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '10.x'
+    displayName: 'Install Node.js'
+  - script: |
+      npm install
+      npm run build
+    displayName: 'npm install and build'
 
 
 
