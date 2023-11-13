@@ -1,0 +1,22 @@
+# azure-pipelines.yml
+
+trigger:
+- master  # Define the branch to trigger the pipeline
+
+pool:
+  vmImage: 'windows-latest'  # Use a Windows agent, you can change it based on your requirements
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - script: npm run build  # Add your build commands here
+      displayName: 'Build'
+
+- stage: Deploy
+  jobs:
+  - job: DeployJob
+    steps:
+    - script: npm run deploy  # Add your deployment commands here
+      displayName: 'Deploy'
