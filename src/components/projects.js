@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./card";
 import './projects.css'
 import { useState, useEffect } from 'react';
+import { AnimatePresence } from "framer-motion";
 
 export default function Projects() {
     
