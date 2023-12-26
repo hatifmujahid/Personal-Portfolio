@@ -9,50 +9,9 @@ import Timeline from "./components/timeline";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import Skills from "./components/skills";
+import "./App.css";
 function App() {
     const [isLoading, setIsLoading] = useState(true);
-
-    const data = [
-        {
-            id: 1,
-            title: "Bachelors in Computer Science",
-            subtitle:
-                "National University of Sciences and Technology (FAST-NUCES)",
-            date: "2020 - 2024 (Expected)",
-        },
-        {
-            id: 2,
-            title: "A levels",
-            subtitle: "Credo College",
-            date: "2018 - 2020",
-            cgpa: "",
-        },
-        {
-            id: 3,
-            title: "O levels",
-            subtitle: "Beaconhouse School System",
-            date: "2016 - 2018",
-            cgpa: "",
-        },
-    ];
-
-    const development = [
-        {
-            item: "JavaScript",
-        },
-        {
-            item: "TypeScript",
-        },
-        {
-            item: "React JS",
-        },
-        {
-            item: "Next JS",
-        },
-        {
-            item: "Node JS",
-        },
-    ];
 
     useEffect(() => {
         setTimeout(() => {
@@ -73,7 +32,11 @@ function App() {
         },
     };
     const url = (name, wrap = false) =>
-    `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+        `${
+            wrap ? "url(" : ""
+        }https://awv3node-homepage.surge.sh/build/assets/${name}.svg${
+            wrap ? ")" : ""
+        }`;
     return (
         <div>
             {isLoading ? (
@@ -85,14 +48,11 @@ function App() {
                         height: "100%",
                         background:
                             "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)",
-                        backgroundImage: url('stars', true),
-                        backgroundSize: 'cover',
-                        backgroundPosition:'center',
-                      
-                        
+                        backgroundImage: url("stars", true),
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
                     }}
                     className="transition duration-1300 ease-in-out flex flex-col"
-                    
                 >
                     <section
                         className="h-screen max-[800px]:scale-75 md:h-screen w-full md:w-screen flex flex-col items-center justify-center opacity-0 ease-in duration-100 mt-10"
@@ -174,7 +134,7 @@ function App() {
                             </motion.svg>
                         </motion.div>
 
-                        <ToastQuote />
+                        {/* <ToastQuote /> */}
                         <div className="py-4 px-4 max-w-screen-xl text-center lg:py-16 snap-center">
                             <h1 className="pb-4 font-extrabold tracking-tight text-transparent text-7xl lg:text-8xl bg-clip-text bg-gradient-to-r from-zinc-200/60 via-zinc-200 to-zinc-200/60">
                                 <span
@@ -237,11 +197,24 @@ function App() {
                         <Buttons />
                     </section>
 
-                    <div className="skills flex flex-col h-screen w-screen md:h-screen mt-5 md:mt-10 max-[800px]:scale-75">
-                        <h1 className="text-center text-5xl font-bold text-white mb-4">
-                            Skills
-                        </h1>
-                        <Skills />
+                    <div className="snap-container">
+                        <div className=" parallax-section">
+                            <h1 className="text-center text-5xl font-bold text-white mb-4">
+                                Skills
+                            </h1>
+                        </div>
+
+                        <div className="snap-section">
+                            <Skills skill="Web Development" />
+                        </div>
+
+                        <div className="snap-section">
+                            <Skills skill="CyberSecurity" />
+                        </div>
+
+                        <div className="snap-section">
+                            <Skills skill="Tools" />
+                        </div>
                     </div>
 
                     <div className="flex flex-col max-[800px]:scale-75 w-screen h-screen ">

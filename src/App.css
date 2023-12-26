@@ -1,0 +1,21 @@
+.snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  .snap-section {
+    scroll-snap-align: center;
+    height: 100vh; /* Adjust the height as necessary */
+    overflow-x: hidden;
+  }
+  .parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .snap-container::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
