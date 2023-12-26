@@ -34,7 +34,7 @@ export default function Buttons() {
         
     ];
     return (
-        <div className=" z-1 relative flex justify-center mt-5 gap-5">
+        <div className=" z-1 relative flex justify-center mt-2 gap-5">
           <a href={links[0].url}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

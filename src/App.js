@@ -55,7 +55,7 @@ function App() {
                     className="transition duration-1300 ease-in-out flex flex-col"
                 >
                     <section
-                        className="h-screen max-[800px]:scale-75 md:h-screen w-full md:w-screen flex flex-col items-center justify-center opacity-0 ease-in duration-100 mt-10"
+                        className="h-screen max-[800px]:scale-75 w-screen flex flex-col items-center justify-center opacity-0 ease-in duration-100 mt-5"
                         id="section"
                     >
                         <motion.div
@@ -177,7 +177,7 @@ function App() {
                                 </button>
                                 <button
                                     type="button"
-                                    className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-2"
+                                    className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 mr-2 mb-1"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -197,25 +197,18 @@ function App() {
                         <Buttons />
                     </section>
 
-                    <div className="snap-container">
-                        <div className=" parallax-section">
-                            <h1 className="text-center text-5xl font-bold text-white mb-4">
-                                Skills
-                            </h1>
-                        </div>
-
-                        <div className="snap-section">
-                            <Skills skill="Web Development" />
-                        </div>
-
-                        <div className="snap-section">
-                            <Skills skill="CyberSecurity" />
-                        </div>
-
-                        <div className="snap-section">
-                            <Skills skill="Tools" />
+                    <div className="flex items-center justify-center ">
+                        <h1 className="p-16 z-10 heading-skill absolute text-center text-5xl font-bold text-white">
+                            Skills
+                        </h1>
+                        <div class="container-skill">
+                            <div class="color-div bg-black"></div>
+                            <div class="color-div bg-blue-900"></div>
+                            <div class="color-div bg-green-950"></div>
                         </div>
                     </div>
+
+                    
 
                     <div className="flex flex-col max-[800px]:scale-75 w-screen h-screen ">
                         <div className="h-screen w-screen flex flex-col items-center justify-center ease-in duration-100 mb-10">

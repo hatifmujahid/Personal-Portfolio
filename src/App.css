@@ -1,21 +1,16 @@
-.snap-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-  }
-  
-  .snap-section {
-    scroll-snap-align: center;
-    height: 100vh; /* Adjust the height as necessary */
-    overflow-x: hidden;
-  }
-  .parallax-section {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .snap-container::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
+.container-skill {
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Aligns child divs in a row */
+}
+
+.color-div {
+  width: 33.33%; /* Each div takes up one-third of the container width */
+  height: 100%; /* Full height of the container */
+}
+.heading-skill{
+  border-radius: 50px;
+background: linear-gradient(145deg, #1a1d6b, #1f227f);
+box-shadow:  21px 21px 38px #0c0d30,
+             -21px -21px 38px #2e33be;
+}
