@@ -6,8 +6,10 @@ import cert4 from "../assets/cert4.jpg";
 import cert5 from "../assets/cert5.png";
 import cert6 from "../assets/cert6.png";
 import cert7 from "../assets/cert7.png";
+import cert8 from "../assets/cert8.png";
+import cert9 from "../assets/cert9.png";
 
-const images = [cert1, cert2, cert3, cert4, cert5, cert6, cert7];
+const images = [cert1, cert2, cert3, cert4, cert5, cert6, cert7, cert8, cert9];
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,7 +25,7 @@ const Carousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
-    }, 3000); // Change slide every 3000 milliseconds (3 seconds)
+    }, 2000); // Change slide every 3000 milliseconds (3 seconds)
 
     return () => clearInterval(timer); // Clear the interval when the component unmounts
   }, [currentSlide]);

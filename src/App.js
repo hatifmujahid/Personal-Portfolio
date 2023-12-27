@@ -1,15 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Loading from "./components/loading";
 import Buttons from "./components/buttons";
 import Projects from "./components/projects";
-import ToastQuote from "./components/toast_quote";
 import Carousel from "./components/carousel";
 import Timeline from "./components/timeline";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import Skills from "./components/skills";
 import "./App.css";
+
+
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -197,15 +197,8 @@ function App() {
                         <Buttons />
                     </section>
 
-                    <div className="flex items-center justify-center ">
-                        <h1 className="p-16 z-10 heading-skill absolute text-center text-5xl font-bold text-white">
-                            Skills
-                        </h1>
-                        <div class="container-skill">
-                            <div class="color-div bg-black"></div>
-                            <div class="color-div bg-blue-900"></div>
-                            <div class="color-div bg-green-950"></div>
-                        </div>
+                    <div className="flex items-center justify-center skill-section">
+                        <Skills />
                     </div>
 
                     

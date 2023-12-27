@@ -29,7 +29,7 @@ export default function Timeline() {
                         <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
                     </svg>
                     </span>
-                    <h3 class="flex ml-2 items-center mb-1 text-lg font-semibold text-gray-200 dark:text-white">Software Lab Instructor<span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">Latest</span></h3>
+                    <h3 class="flex ml-2 items-center mb-1 text-lg font-semibold text-gray-200 dark:text-white">Software Lab Instructor</h3>
                     <time class="block ml-2 mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Data Structure | FAST NUCES | July 2023-August 2023</time>
                     <p class="mb-4 text-base ml-2 font-normal text-gray-500 dark:text-gray-400 w-3/4">
                         <li class="space-y-1 text-gray-500 list-disc list-inside ">
