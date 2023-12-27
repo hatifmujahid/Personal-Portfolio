@@ -1,11 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Loading from "./components/loading";
 import Buttons from "./components/buttons";
 import Projects from "./components/projects";
 import Carousel from "./components/carousel";
 import Timeline from "./components/timeline";
 import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
 import Skills from "./components/skills";
 import "./App.css";
 
@@ -217,6 +216,14 @@ function App() {
                             Projects
                         </h1>
                         <Projects />
+                        <div>
+                            <a class="fancy" href="https://github.com/hatifmujahid">
+                                <span class="top-key"></span>
+                                <span class="text">Check out more at Github</span>
+                                <span class="bottom-key-1"></span>
+                                <span class="bottom-key-2"></span>
+                            </a>
+                        </div>
                     </div>
                     <div className="skills flex flex-col items-center w-screen h-screen max-[800px]:scale-75 lg:scale-100">
                         <h1 className="text-center text-5xl font-bold text-white">
