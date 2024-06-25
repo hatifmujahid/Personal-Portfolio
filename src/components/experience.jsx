@@ -12,13 +12,13 @@ export default function Experience() {
             class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="2024 to Present"
           >
-            2024 — Present
+            Jan 2024 — Present
           </header>
           <div class="z-10 sm:col-span-6">
             <h3 class="font-medium leading-snug text-slate-200">
               <div>
                 <a
-                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
                   href="https://www.cdcpakistan.com/"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -53,22 +53,22 @@ export default function Experience() {
             </p>
             <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   Java
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   Angular
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   PLSQL
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   Eclipse
                 </div>
               </li>
@@ -83,13 +83,13 @@ export default function Experience() {
             class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="2024 to Present"
           >
-            2024 — Present
+            June 2023 — Aug 2023
           </header>
           <div class="z-10 sm:col-span-6">
             <h3 class="font-medium leading-snug text-slate-200">
               <div>
                 <a
-                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
                   href="https://www.cdcpakistan.com/"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -124,25 +124,25 @@ export default function Experience() {
             </p>
             <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   Java
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   Angular
                 </div>
               </li>
-              {/* <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  React
+              <li class="mr-1.5 mt-2">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  Postman
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Storybook
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  MsSQL server
                 </div>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
@@ -154,13 +154,13 @@ export default function Experience() {
             class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
             aria-label="2024 to Present"
           >
-            2024 — Present
+            Jan 2024 — May 2024
           </header>
           <div class="z-10 sm:col-span-6">
             <h3 class="font-medium leading-snug text-slate-200">
               <div>
                 <a
-                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                  class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300  group/link text-base"
                   href="https://www.cdcpakistan.com/"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -168,7 +168,7 @@ export default function Experience() {
                 >
                   <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                   <span>
-                    FullStack Engineer ➡ <span class="inline-block"> Central Depository Company of Pakistan
+                    Tech Lead ➡ <span class="inline-block"> ACM-NUCES FAST Karachi
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -195,25 +195,30 @@ export default function Experience() {
             </p>
             <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Java
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  NoSQL
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Angular
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  Azure
                 </div>
               </li>
-              {/* <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+              <li class="mr-1.5 mt-2">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
                   React
                 </div>
               </li>
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Storybook
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  Node JS
                 </div>
-              </li> */}
+              </li>
+              <li class="mr-1.5 mt-2">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300 ">
+                  Postman
+                </div>
+              </li>
             </ul>
           </div>
         </div>
