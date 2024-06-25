@@ -1,4 +1,6 @@
 import Project from "./project"
+import devday from "../assets/devday.png"
+import coder from "../assets/coders_cup.png"
 
 export default function Projects() {
 
@@ -18,7 +20,7 @@ export default function Projects() {
             span="Register" 
             link="https://acmdevday.com" 
             description="A registration portal for ACM Devday'24, a conference for developers, designers, and tech enthusiasts." 
-            img="src/assets/devday.png"
+            img={devday}
             />
           </li>
           <li class="mb-12">
@@ -28,7 +30,7 @@ export default function Projects() {
             description="Welcome to the Coder's Cup website, where you can register as a participant for our exciting coding 
             competition! This web application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and 
             is hosted at acmcoderscup.online."
-            img="src/assets/coder's_cup.png" 
+            img={coder} 
             />
           </li>
           {/* <li class="mb-12">
