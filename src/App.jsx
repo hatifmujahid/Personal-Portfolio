@@ -22,7 +22,7 @@ function App() {
             <h2 className="mt-3 text-lg font-medium tracking-tight text-black sm:text-xl">
               Full-Stack Engineer, App developer, AI engineer
             </h2>
-            <p className="mt-4 max-w-xs leading-normal text-black">
+            <p className="mt-4 max-w-xs leading-normal  italic text-gray-800">
               I'm a software engineer based in Pakistan specializing in building
               solutions for the web. I'm passionate about building products that
               improve the lives of those around me.
@@ -74,7 +74,7 @@ function App() {
           <Experience />
           <div class="mt-12">
             <a
-              class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+              class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300 font-semibold text-slate-200 group/link text-base"
               href="https://drive.google.com/file/d/1xluQqMo5Ex_svVl348Tb_Zd2tiXY_GAT/view?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
