@@ -6,6 +6,9 @@ import Socials from "./components/socials";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
+import svg from "./components/svg";
+import Svg from "./components/svg";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,13 +17,13 @@ function App() {
     <>
       <div className="grid lg:grid-cols-2 h-full w-full ">
         {/* Left Side */}
-        <div className="bg-gray-200 p-4 sticky overflow-hidden lg:top-0 flex flex-col justify-center h-screen sm:overflow-visible">
+        <div className="bg-gray-200 p-4 sticky m:overflow-hidden lg:top-0 flex flex-col justify-center h-screen overflow-visible">
           <div className="mt-8 flex flex-col text-center justify-center items-center">
             <h1 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">
               <a href="/">Muhammad Hatif Mujahid</a>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-black sm:text-xl">
-              Full-Stack Engineer, App developer, AI engineer
+              Full-Stack Engineer, Backend Developer, App developer, AI engineer
             </h2>
             <p className="mt-4 max-w-xs leading-normal  italic text-gray-800">
               I'm a software engineer based in Pakistan specializing in building
@@ -66,6 +69,9 @@ function App() {
             </nav>
           </div>
           <Socials />
+          {/* <div className="mt-5">
+            <Svg />
+          </div> */}
         </div>
 
         {/* Right Side */}
