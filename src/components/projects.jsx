@@ -33,12 +33,12 @@ export default function Projects() {
             img={coder} 
             />
           </li>
-          <li class="mb-12">
+{/*           <li class="mb-12">
             <Project name="ACM Devday'24" 
             span="Register" 
             link="https://acmdevday.com" 
             description="A registration portal for ACM Devday'24, a conference for developers, designers, and tech enthusiasts." />
-          </li>
+          </li> */}
         </ul>
         {/* <div class="mt-12">
           <a
