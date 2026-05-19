@@ -23,12 +23,12 @@ function App() {
               <a href="/">Muhammad Hatif Mujahid</a>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-black sm:text-xl">
-              Full-Stack Engineer, Backend Developer, App developer, AI engineer
+              Software Engineer · Backend · AI & Data Intelligence
             </h2>
-            <p className="mt-4 max-w-xs leading-normal  italic text-gray-800">
-              I'm a software engineer based in Pakistan specializing in building
-              solutions for the web. I'm passionate about building products that
-              improve the lives of those around me.
+            <p className="mt-4 max-w-xs leading-normal italic text-gray-800">
+              Software Engineer focused on SaaS platform scalability, secure backend architectures,
+              and AI-powered data intelligence. Experienced in leading distributed teams to deliver
+              high-availability REST APIs and autonomous data agents.
             </p>
             <nav
               className="nav hidden lg:block"

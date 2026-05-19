@@ -2,7 +2,7 @@ export default function Project(props) {
   return (
     <div class="group cursor-pointer relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
       <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-      <div class="z-10 sm:order-2 sm:col-span-6">
+      <div class={`z-10 sm:order-2 ${props.img ? 'sm:col-span-6' : 'sm:col-span-8'}`}>
         <h3>
           <a
             class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-200 focus-visible:text-blue-200  group/link text-base"
@@ -32,9 +32,20 @@ export default function Project(props) {
             </span>
           </a>
         </h3>
-        <p class="mt-2 text-sm leading-normal">{props.description}</p>
+        <p class="mt-2 text-sm leading-normal text-slate-400">{props.description}</p>
+        {props.tags && (
+          <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+            {props.tags.map((tag) => (
+              <li key={tag} class="mr-1.5 mt-2">
+                <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-blue-300">
+                  {tag}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-      <img loading="lazy" width="200" height="48" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 fill-transparent"  src={props.img}></img>
+      {props.img && <img loading="lazy" width="200" height="48" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 fill-transparent"  src={props.img}></img>}
     </div>
   );
 }

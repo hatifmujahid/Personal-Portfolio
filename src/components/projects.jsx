@@ -3,7 +3,6 @@ import devday from "../assets/devday.png"
 import coder from "../assets/coders_cup.png"
 
 export default function Projects() {
-
   return (
     <section
       id="projects"
@@ -15,62 +14,60 @@ export default function Projects() {
       </h2>
       <div>
         <ul class="group/list">
+
           <li class="mb-12">
-            <Project name="ACM Devday'24" 
-            span="Register" 
-            link="https://acmdevday.com" 
-            description="A registration portal for ACM Devday'24, a conference for developers, designers, and tech enthusiasts." 
-            img={devday}
+            <Project
+              name="Agentic RFP Response Engine"
+              description="Engineered an autonomous agent utilising RAG (Retrieval-Augmented Generation) to process technical specifications, featuring a self-correction loop to verify content against compliance guidelines."
+              tags={["Python", "LangGraph", "Azure Logic Apps", "OpenAI", "RAG"]}
             />
           </li>
+
           <li class="mb-12">
-            <Project name="ACM Coder's Cup 2024" 
-            span="Register" 
-            link="https://www.acmcoderscup.online/" 
-            description="Welcome to the Coder's Cup website, where you can register as a participant for our exciting coding 
-            competition! This web application is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) and 
-            is hosted at acmcoderscup.online."
-            img={coder} 
+            <Project
+              name="Autonomous Financial Reconciliation Agent"
+              description="Developed a multi-agent system to automate bank-to-GL reconciliation, utilising fuzzy matching and semantic data reasoning to identify anomalies, reducing manual overhead by 75%."
+              tags={["Python", "Pandas", "OpenAI", "LangGraph", "SQL"]}
             />
           </li>
-{/*           <li class="mb-12">
-            <Project name="ACM Devday'24" 
-            span="Register" 
-            link="https://acmdevday.com" 
-            description="A registration portal for ACM Devday'24, a conference for developers, designers, and tech enthusiasts." />
+
+          <li class="mb-12">
+            <Project
+              name="Generative AI Malware Classifier"
+              description="Designed a deep learning model to identify zero-day malicious software through data intelligence, achieving 96% detection accuracy on complex datasets."
+              tags={["TensorFlow", "Streamlit", "Python"]}
+            />
+          </li>
+
+          <li class="mb-12">
+            <Project
+              name="Grafana Dashboard for Azure"
+              description="Implemented and managed centralised monitoring and alerting workflows using Grafana for cloud infrastructure hosted on Microsoft Azure, enabling proactive incident detection and improved system reliability."
+              tags={["Grafana", "Azure", "CI/CD", "Monitoring"]}
+            />
+          </li>
+
+          {/* <li class="mb-12">
+            <Project
+              name="ACM DevDay '24"
+              link="https://acmdevday.com"
+              description="A registration portal for ACM DevDay '24, a conference for developers, designers, and tech enthusiasts. Features a real-time AI-driven chatbot powered by IBM WatsonX."
+              img={devday}
+              tags={["React", "Node.js", "IBM WatsonX", "MongoDB"]}
+            />
+          </li>
+
+          <li class="mb-12">
+            <Project
+              name="ACM Coder's Cup 2024"
+              link="https://www.acmcoderscup.online/"
+              description="Coding competition registration platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js), hosted at acmcoderscup.online."
+              img={coder}
+              tags={["MongoDB", "Express.js", "React", "Node.js"]}
+            />
           </li> */}
+
         </ul>
-        {/* <div class="mt-12">
-          <a
-            class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
-            aria-label="View Full Project Archive"
-            href="/archive"
-          >
-            <span>
-              <span class="border-b border-transparent pb-px transition group-hover:border-blue-200 motion-reduce:transition-none">
-                View Full Project
-              </span>
-              <span class="whitespace-nowrap">
-                <span class="border-b border-transparent pb-px transition group-hover:border-blue-200 motion-reduce:transition-none">
-                  Archive
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </span>
-          </a>
-        </div> */}
       </div>
     </section>
   );

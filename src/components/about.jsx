@@ -4,15 +4,21 @@ export default function About() {
       <h2 className="lg:hidden text-2xl font-bold tracking-tight text-white sm:text-3xl">
         About
       </h2>
-      <p className="mt-4 leading-normal text-gray-400 ">
-        Back in 2020, I got into FAST NUCES as a BSCS student.
-        Fast-forward to today, and I've had the privilege of
-        building software for an established society in fast, a coorporate company, a huge
-        corporation, and my personal portfolio. My main focus these days is working as FullStack
-        Developer at a company called "Central Depository Company of Pakistan" where I build software for.<br /><br/>
-        In my free time, I enjoy learning new technologies and building random softwares to solve problems.<br/><br/>
-        When I'm not at the computer, I'm usually find leisure in playing futsal, going to the gym,
-        hanging out with my friends, or going for a cup of tea.
+      <p className="mt-4 leading-normal text-gray-400">
+        I graduated with a Bachelor of Science in Computer Science from FAST National University of
+        Computer and Emerging Sciences (August 2020 – June 2024). Since then, I've built software for
+        enterprise SaaS platforms, financial institutions, and AI-driven systems across the US and Pakistan.
+      </p>
+      <p className="mt-4 leading-normal text-gray-400">
+        My work centres on scalable backend architectures, cloud-native deployments, and AI-powered data
+        intelligence — including multi-agent systems, RAG pipelines, and autonomous reconciliation agents.
+        I'm proficient in Python, SQL, and have a track record of cutting operational costs by 76% through
+        optimised infrastructure.
+      </p>
+      <p className="mt-4 leading-normal text-gray-400">
+        In my free time I enjoy learning new technologies and building tools that solve real problems. When
+        I'm away from the keyboard you'll usually find me playing futsal, at the gym, or out for tea with
+        friends.
       </p>
     </section>
   );
