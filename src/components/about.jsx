@@ -5,19 +5,41 @@ export default function About() {
         About
       </h2>
       <p className="mt-4 leading-normal text-gray-400">
-        I graduated with a Bachelor of Science in Computer Science from FAST National University of
-        Computer and Emerging Sciences (August 2020 – June 2024). Since then, I've built software for
-        enterprise SaaS platforms, financial institutions, and AI-driven systems across the US and Pakistan.
+        I'm a software engineer who ships <span className="font-medium text-slate-200">autonomous AI
+        agents and cloud-native backends for US enterprises</span> — building from Karachi while
+        delivering on US time. I like the hard, measurable problems: making systems reliable at scale,
+        teaching them to reason with LLMs, and cutting the cloud bill while I'm at it.
       </p>
       <p className="mt-4 leading-normal text-gray-400">
-        My work centres on scalable backend architectures, cloud-native deployments, and AI-powered data
-        intelligence — including multi-agent systems, RAG pipelines, and autonomous reconciliation agents.
-        I'm proficient in Python, SQL, and have a track record of cutting operational costs by 76% through
-        optimised infrastructure.
+        Over the last two years I've led distributed teams across the full SDLC for Blue Ocean
+        Strategic Partners (Pittsburgh) and Chainbot Solutions, owning everything from high-availability
+        REST APIs and Docker deployments to multi-agent RAG pipelines. My edge is delivering
+        enterprise-grade work remotely — and proving the impact in numbers, not adjectives.
       </p>
-      <p className="mt-4 leading-normal text-gray-400">
-        In my free time I enjoy learning new technologies and building tools that solve real problems. When
-        I'm away from the keyboard you'll usually find me playing futsal, at the gym, or out for tea with
+
+      <ul className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="What I do">
+        <li className="rounded-lg border border-slate-200/10 bg-slate-800/30 p-4">
+          <h3 className="text-sm font-semibold text-slate-200">Agentic AI</h3>
+          <p className="mt-1 text-xs leading-snug text-slate-500">
+            Multi-agent systems, RAG, and self-correcting LLM workflows with LangGraph & OpenAI.
+          </p>
+        </li>
+        <li className="rounded-lg border border-slate-200/10 bg-slate-800/30 p-4">
+          <h3 className="text-sm font-semibold text-slate-200">Backend at scale</h3>
+          <p className="mt-1 text-xs leading-snug text-slate-500">
+            Secure, high-availability REST APIs and SaaS platforms in Python &amp; TypeScript.
+          </p>
+        </li>
+        <li className="rounded-lg border border-slate-200/10 bg-slate-800/30 p-4">
+          <h3 className="text-sm font-semibold text-slate-200">Cloud &amp; cost</h3>
+          <p className="mt-1 text-xs leading-snug text-slate-500">
+            Docker/K8s, AWS &amp; Azure architecture tuned to cut spend without losing uptime.
+          </p>
+        </li>
+      </ul>
+
+      <p className="mt-6 leading-normal text-gray-400">
+        Away from the keyboard, you'll find me on the futsal court, at the gym, or out for tea with
         friends.
       </p>
     </section>

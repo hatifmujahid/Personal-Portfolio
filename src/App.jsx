@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Socials from "./components/socials";
 import About from "./components/about";
+import Stats from "./components/stats";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import svg from "./components/svg";
@@ -23,13 +24,21 @@ function App() {
               <a href="/">Muhammad Hatif Mujahid</a>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-black sm:text-xl">
-              Software Engineer · Backend · AI & Data Intelligence
+              AI &amp; Backend Engineer — Agentic Systems · Cloud-Native Architecture
             </h2>
             <p className="mt-4 max-w-xs leading-normal italic text-gray-800">
-              Software Engineer focused on SaaS platform scalability, secure backend architectures,
-              and AI-powered data intelligence. Experienced in leading distributed teams to deliver
-              high-availability REST APIs and autonomous data agents.
+              I build autonomous AI agents and resilient backends for US enterprises — and I've cut
+              cloud costs by up to 76% doing it. Remote from Karachi, delivering on US time.
             </p>
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-green-500/15 px-3 py-1 text-xs font-semibold text-green-700">
+                <span className="h-2 w-2 rounded-full bg-green-600 animate-pulse"></span>
+                Open to remote roles
+              </span>
+              <span className="inline-flex items-center rounded-full bg-gray-300/60 px-3 py-1 text-xs font-medium text-gray-700">
+                Karachi · UTC+5 · US hours
+              </span>
+            </div>
             <nav
               className="nav hidden lg:block"
               aria-label="In-page jump links"
@@ -77,6 +86,7 @@ function App() {
         {/* Right Side */}
         <div className="bg-black p-16 overflow-auto h-screen sm:h-auto">
           <About />
+          <Stats />
           <Experience />
           <div class="mt-12">
             <a
