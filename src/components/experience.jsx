@@ -22,7 +22,7 @@ export default function Experience() {
                   <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
                     <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                     <span>
-                      Software Engineer II ➡ <span class="inline-block">Chainbot Solutions</span>
+                      Software Engineer ➡ <span class="inline-block">Bits Generation</span>
                       <span class="ml-2 text-xs font-normal text-slate-500">USA (Remote)</span>
                     </span>
                   </span>
