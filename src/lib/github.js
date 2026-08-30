@@ -25,7 +25,7 @@ const REPO_BLURBS = {
     "CLI that syncs local coding-agent token usage to a public leaderboard.",
   "stravibe-cursor-extension":
     "VS Code / Cursor extension for the straVIBE AI-usage leaderboard.",
-  Coders-cup-website2023:
+  "Coders-cup-website2023":
     "MERN registration platform for ACM Coder's Cup, hosted at acmcoderscup.online.",
   "Dev-Day-2024-website":
     "Conference site and registration for ACM Developer's Day '24.",
