@@ -3,6 +3,7 @@ import {
   GITHUB_USER,
   loadGithubRepos,
   splitRepos,
+  applyBlurb,
   timeAgo,
   displayName,
   yearOf,
@@ -18,7 +19,7 @@ export function useGithubRepos() {
     loadGithubRepos()
       .then((all) => {
         if (cancelled) return;
-        const split = splitRepos(all);
+        const split = splitRepos(all.map(applyBlurb));
         setWorkingOn(split.workingOn);
         setRepos(split.repos);
         setStatus("ready");

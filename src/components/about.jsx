@@ -12,7 +12,7 @@ export default function About() {
       </p>
       <p className="mt-4 leading-normal text-gray-400">
         Over the last two years I've led distributed teams across the full SDLC for Blue Ocean
-        Strategic Partners (Pittsburgh) and Chainbot Solutions, owning everything from high-availability
+        Strategic Partners (Pittsburgh) and Bits Generation, owning everything from high-availability
         REST APIs and Docker deployments to multi-agent RAG pipelines. My edge is delivering
         enterprise-grade work remotely — and proving the impact in numbers, not adjectives.
       </p>

@@ -1,10 +1,12 @@
 import Project from "./project"
 import { useGithubRepos, WorkingOn, GithubList } from "./github-projects"
+import { FEATURED_GITHUB } from "../lib/github"
 import devday from "../assets/devday.png"
 import coder from "../assets/coders_cup.png"
 
 export default function Projects() {
   const { workingOn, repos, status } = useGithubRepos();
+  const extraWorking = workingOn.filter((r) => !FEATURED_GITHUB.has(r.name));
 
   return (
     <section
@@ -15,10 +17,46 @@ export default function Projects() {
       <h2 className="text-2xl font-bold tracking-tight text-slate-200 sm:text-3xl my-6">
         Projects
       </h2>
-      <WorkingOn workingOn={workingOn} status={status} />
+      <WorkingOn workingOn={extraWorking} status={status} />
       <div>
         <h3 className="mb-6 text-sm font-medium text-slate-200">Selected work</h3>
         <ul class="group/list">
+
+          <li class="mb-12">
+            <Project
+              name="CareCloud Voice Agent"
+              link="https://carecloud-voice-agent.vercel.app"
+              description="Voice AI that registers patients over a phone call: collects demographics, reads them back, saves to MongoDB, and exposes a REST API plus dashboard. Vapi telephony, GPT-4.1, Express on Vercel."
+              tags={["JavaScript", "Vapi", "GPT-4.1", "Express", "MongoDB", "Vercel"]}
+            />
+          </li>
+
+          <li class="mb-12">
+            <Project
+              name="LLM Refusal Eval"
+              link="https://github.com/hatifmujahid/AI-JailBreak-eval"
+              description="Direct-request refusal suite: scores attack success rate and over-refusal across Claude and OpenAI. CLI, JSONL dataset, pytest — not a jailbreak-attack generator. Optional JailbreakBench."
+              tags={["Python", "Anthropic", "OpenAI", "pytest"]}
+            />
+          </li>
+
+          <li class="mb-12">
+            <Project
+              name="straVIBE"
+              link="https://www.npmjs.com/package/stravibe"
+              description="npm CLI and Cursor/VS Code extension that syncs local coding-agent token usage to a public leaderboard. GitHub or email login; prompts and file paths never leave the machine."
+              tags={["Node.js", "TypeScript", "npm", "Cursor"]}
+            />
+          </li>
+
+          <li class="mb-12">
+            <Project
+              name="FixedDaam"
+              link="https://fixed-daam-frontend.vercel.app"
+              description="Pay now, collect later. React storefront where shoppers lock today's prices and retrieve via QR; merchants add inventory. Auth, forms, and a protected dashboard."
+              tags={["React", "Vite", "Zustand", "Zod", "Tailwind"]}
+            />
+          </li>
 
           <li class="mb-12">
             <Project
@@ -74,7 +112,7 @@ export default function Projects() {
 
         </ul>
       </div>
-      <GithubList repos={repos} status={status} />
+      <GithubList repos={repos.filter((r) => !FEATURED_GITHUB.has(r.name))} status={status} />
     </section>
   );
 }

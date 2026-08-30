@@ -6,6 +6,41 @@ const GITHUB_LIST_MAX = 8;
 
 export { GITHUB_USER };
 
+export const FEATURED_GITHUB = new Set([
+  "carecloud-voice-agent",
+  "AI-JailBreak-eval",
+  "fixed-daam-frontend",
+  "straVIBE",
+  "stravibe-cursor-extension",
+]);
+
+const REPO_BLURBS = {
+  "AI-JailBreak-eval":
+    "Direct-request LLM refusal eval — ASR and over-refusal across Claude and OpenAI.",
+  "carecloud-voice-agent":
+    "Voice AI patient registration over PSTN. Vapi, GPT-4.1, MongoDB, live dashboard.",
+  "fixed-daam-frontend":
+    "Pay now, collect later. React storefront for locking today's prices.",
+  straVIBE:
+    "CLI that syncs local coding-agent token usage to a public leaderboard.",
+  "stravibe-cursor-extension":
+    "VS Code / Cursor extension for the straVIBE AI-usage leaderboard.",
+  Coders-cup-website2023:
+    "MERN registration platform for ACM Coder's Cup, hosted at acmcoderscup.online.",
+  "Dev-Day-2024-website":
+    "Conference site and registration for ACM Developer's Day '24.",
+  DD_Chatbot_24:
+    "Real-time IBM WatsonX chatbot for high-concurrency DevDay engagement.",
+  weatherapp:
+    "Weather app backed by a GraphQL API on Vercel, reading OpenWeather.",
+};
+
+export function applyBlurb(repo) {
+  if (repo.description) return repo;
+  const blurb = REPO_BLURBS[repo.name];
+  return blurb ? { ...repo, description: blurb } : repo;
+}
+
 export function splitRepos(repos) {
   const listed = repos
     .filter(isListed)
