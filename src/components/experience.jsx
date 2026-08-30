@@ -23,7 +23,7 @@ export default function Experience() {
                     <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                     <span>
                       Software Engineer ➡ <span class="inline-block">Bits Generation</span>
-                      <span class="ml-2 text-xs font-normal text-slate-500">USA (Remote)</span>
+                      <span class="ml-2 text-xs font-normal text-slate-500">USA (Hybrid)</span>
                     </span>
                   </span>
                 </div>
@@ -102,7 +102,7 @@ export default function Experience() {
                   <span class="inline-flex items-baseline font-medium leading-tight text-slate-200 text-base">
                     <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                     <span>
-                      Associate Freelance Software Engineer ➡ <span class="inline-block">Central Depository Company of Pakistan</span>
+                      Associate Software Engineer ➡ <span class="inline-block">Central Depository Company of Pakistan</span>
                       <span class="ml-2 text-xs font-normal text-slate-500">Karachi, Pakistan</span>
                     </span>
                   </span>

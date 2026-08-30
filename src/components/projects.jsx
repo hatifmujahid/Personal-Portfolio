@@ -1,8 +1,11 @@
 import Project from "./project"
+import { useGithubRepos, WorkingOn, GithubList } from "./github-projects"
 import devday from "../assets/devday.png"
 import coder from "../assets/coders_cup.png"
 
 export default function Projects() {
+  const { workingOn, repos, status } = useGithubRepos();
+
   return (
     <section
       id="projects"
@@ -12,7 +15,9 @@ export default function Projects() {
       <h2 className="text-2xl font-bold tracking-tight text-slate-200 sm:text-3xl my-6">
         Projects
       </h2>
+      <WorkingOn workingOn={workingOn} status={status} />
       <div>
+        <h3 className="mb-6 text-sm font-medium text-slate-200">Selected work</h3>
         <ul class="group/list">
 
           <li class="mb-12">
@@ -69,6 +74,7 @@ export default function Projects() {
 
         </ul>
       </div>
+      <GithubList repos={repos} status={status} />
     </section>
   );
 }
